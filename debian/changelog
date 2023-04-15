@@ -1,3 +1,9 @@
+wiringpi-opi (2.273~iwj) jammy; urgency=low
+
+  * Update control info with conflicting package
+
+ -- Joshua Riek <jjriek@verizon.net>  Sat, 15 Apr 2023 16:08:15 -0400
+
 wiringpi-opi (2.272~iwj) jammy; urgency=low
 
   * Renamed packages from PR feedback

@@ -10,12 +10,14 @@ Package: libwiringpi2-opi
 Section: libs
 Architecture: arm64
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libwiringpi2
 Description: GPIO librariees for Raspberry Pi (runtime).
  Runtime for the popular wiringPi library.
 
 Package: wiringpi-opi
 Architecture: arm64
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: wiringpi
 Description: gpio utility for Raspberry Pi
  The wiringPi gpio command line utility, for GPIO access on a
  Raspberry Pi from the command line.
@@ -24,6 +26,7 @@ Package: libwiringpi-opi-dev
 Architecture: arm64
 Depends: libwiringpi2-opi (= ${binary:Version}), libc6-dev, ${misc:Depends}
 Suggests: wiringpi-opi
+Conflicts: libwiringpi-dev
 Description: GPIO development library for Raspberry Pi
  Development libraries to allow GPIO access on a Raspberry Pi from C
  and C++ programs.
