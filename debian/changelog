@@ -1,3 +1,9 @@
+wiringpi-opi (2.480~iwj) jammy; urgency=medium
+
+  * Fix broken symlinks and version
+
+ -- Joshua Riek <jjriek@verizon.net>  Mon, 05 Jun 2023 10:25:46 -0400
+
 wiringpi-opi (2.48~iwj) jammy; urgency=medium
 
   * Upstream update to support Orange Pi 5 Plus
