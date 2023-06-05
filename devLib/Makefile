@@ -138,3 +138,4 @@ lcd128x64.o: font.h lcd128x64.h
 lcd.o: lcd.h
 scrollPhat.o: scrollPhatFont.h scrollPhat.h
 piGlow.o: piGlow.h
+

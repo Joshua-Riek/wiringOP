@@ -23,6 +23,7 @@
 #    along with wiringPi.  If not, see <http://www.gnu.org/licenses/>.
 #################################################################################
 
+VERSION=$(shell cat ../VERSION)
 DESTDIR?=/usr
 PREFIX?=/local
 
@@ -79,6 +80,8 @@ ifneq ($(WIRINGPI_SUID),0)
 endif
 	$Q mkdir -p		$(DESTDIR)$(PREFIX)/share/man/man1
 	$Q cp gpio.1		$(DESTDIR)$(PREFIX)/share/man/man1/
+	$Q ln -sf /usr/lib/libwiringPi.so.$(VERSION)	$(DESTDIR)/lib/libwiringPi.so
+	$Q ln -sf /usr/lib/libwiringPiDev.so.$(VERSION)	$(DESTDIR)/lib/libwiringPiDev.so
 
 .PHONY:	install-deb
 install-deb:	gpio
@@ -101,3 +104,4 @@ depend:
 # DO NOT DELETE
 
 gpio.o: ../version.h
+
