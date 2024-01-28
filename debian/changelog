@@ -1,3 +1,22 @@
+wiringpi-opi (2.481~iwj) jammy; urgency=medium
+
+  * Fix iomux for RK3588
+  * Support Orange Pi 5 Pro
+  * Support Orange Pi 5 Max
+  * Support Orange Pi 3B/CM4 PWM
+  * Support Orange Pi 5/5b/5plus PWM
+  * Reconstructed PWM
+  * Support Orange Pi 3 Plus
+  * Support Orange Pi Zero 2W PWM
+  * Support Orange Pi Zero3 PWM
+  * Support Orange Pi 900
+  * Update for opizero2w
+  * Update for opi3b/opicm4
+  * Support Orange Pi 3B
+  * Support Orange Pi Zero2w
+
+ -- Joshua Riek <jjriek@verizon.net>  Sun, 28 Jan 2024 14:48:34 -0500
+
 wiringpi-opi (2.480~iwj) jammy; urgency=medium
 
   * Fix broken symlinks and version
